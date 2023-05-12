@@ -12,4 +12,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7000bd38844b18f49bf79314130f5ab4, type: 3}
   m_Name: Ranks
   m_EditorClassIdentifier: 
-  items: []
+  items:
+  - {fileID: 11400000, guid: 926ee80013b2fc647bfa01e75b063859, type: 2}
+  - {fileID: 11400000, guid: 09315c05710980a47ba23a290c2517bb, type: 2}
+  - {fileID: 11400000, guid: 0e4eada8f0940754caa03aa2bc91e792, type: 2}
+  - {fileID: 11400000, guid: c4e0ffb9f5c3cc44f9281b1786966704, type: 2}
+  - {fileID: 11400000, guid: 03565c59336f79240b0f2ab3b741144c, type: 2}
+  - {fileID: 11400000, guid: e94ddcd4a3fb43b4eac4f798693f3a85, type: 2}
+  - {fileID: 11400000, guid: 7dd9fd957e308b84fa7a51e44d2448af, type: 2}
+  - {fileID: 11400000, guid: 8863eed0d65160047b50378b9683c639, type: 2}
+  - {fileID: 11400000, guid: 89a63a0ccf0d7594096e82e989bec2d7, type: 2}
+  - {fileID: 11400000, guid: d5b22c2dec4fe194d898e0395c5ccf34, type: 2}
+  - {fileID: 11400000, guid: db83fca5cb60c314fb81c2bfe429283d, type: 2}
+  - {fileID: 11400000, guid: 52ea32fc81047df459b08c5e58ced6d6, type: 2}
+  - {fileID: 11400000, guid: 7dd02ff6323527044a1ed5959701f22d, type: 2}
