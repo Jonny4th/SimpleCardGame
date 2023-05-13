@@ -1,14 +1,24 @@
-﻿using UnityEngine;
+using CardFace;
+using Newtonsoft.Json;
+using UnityEngine;
 
 namespace Cards
 {
+    [JsonObject(MemberSerialization.OptIn)]
     public class SimpleCard : MonoBehaviour
     {
-        public SimpleCardFace Face { get; set; }
+        [JsonProperty]
+        public Rank Rank { get; private set; }
 
-        public SimpleCard(SimpleCardFace face)
+        [JsonProperty]
+        public Suit Suit { get; private set; }
+
+        public SimpleCard(Suit suit, Rank rank)
         {
-            Face = face;
+            Suit = suit;
+            Rank = rank;
         }
     }
 }
+
+
