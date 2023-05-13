@@ -15,7 +15,7 @@ namespace Helper
         public void SaveToJson(SimpleDeck deck)
         {
             var date = DateTime.Now.ToString("dd'-'MM'-'yyyy'_'HH''mm''ss");
-            var path = Path.Combine(deckPath, date + ".json");
+            var path = Path.Combine(deckPath, "SimpleDeck_"+ date + ".json");
             Directory.CreateDirectory(Path.GetDirectoryName(path));
             var stream = File.Create(path);
             stream.Close();
