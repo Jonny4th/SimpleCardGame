@@ -39,11 +39,11 @@ public class PanelOnOff : MonoBehaviour
 
     private void Show()
     {
-        gameObject.SetActive(true);
+        ui.SetActive(true);
     }
 
     private void Hide()
     {
-        gameObject.SetActive(false);
+        ui.SetActive(false);
     }
 }

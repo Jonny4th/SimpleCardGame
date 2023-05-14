@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Cards
 {
     [JsonObject(MemberSerialization.OptIn)]
-    public class SimpleCard : MonoBehaviour
+    public class SimpleCard
     {
         [JsonProperty]
         public Rank Rank { get; private set; }

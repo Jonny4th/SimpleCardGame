@@ -9,7 +9,7 @@ namespace Decks
 {
     public abstract class BaseDeck : MonoBehaviour
     {
-        protected List<SimpleCard> m_Cards;
+        protected List<SimpleCard> m_Cards = new();
 
         public List<SimpleCard> Cards
         {
@@ -35,6 +35,20 @@ namespace Decks
         public SimpleCard GetSingleCard()
         {
             var card = m_Cards[0];
+            m_Cards.Remove(card);
+            CardAmountUpdated?.Invoke();
+            return card;
+        }
+
+        public SimpleCard GetCardAtIndex(int index)
+        {
+            if(index >= m_Cards.Count)
+            {
+                Debug.Log("No card.");
+                return null;
+            }
+
+            var card = m_Cards[index];
             m_Cards.Remove(card);
             CardAmountUpdated?.Invoke();
             return card;

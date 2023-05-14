@@ -25,9 +25,6 @@ namespace Decks
             Shuffle();
             OnCardAmountUpdated();
             new JsonFileHelper().SaveToJson(this);
-
-            Debug.Log(m_Cards[0].Rank.Name);
-            Debug.Log(m_Cards[0].Suit.Name);
         }
 
         #region DATA RELATED
@@ -40,8 +37,6 @@ namespace Decks
             var helper = new JsonFileHelper();
             m_Cards = helper.LoadDeckFromJson(fileName);
             OnCardAmountUpdated();
-            Debug.Log(m_Cards[0].Rank.Name);
-            Debug.Log(m_Cards[0].Suit.Name);
         }
         #endregion
     }
